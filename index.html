@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#101c2c" />
+  <meta name="description" content="StudentVoice — a student-focused digital reporting demo." />
+  <title>StudentVoice — Speak Up. Stay Protected.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" data-page="home"><span class="brand-mark">S</span><span>student<span class="brand-accent">voice</span><small>DIGITAL STUDENT SUPPORT</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <nav id="mainNav">
+      <a href="#how" data-scroll="how">How it works</a>
+      <a href="#privacy" data-scroll="privacy">Privacy</a>
+      <button class="nav-login" data-page="student">Student portal</button>
+      <button class="nav-agency" data-page="agency">Agency demo</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero page active" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> A safer space to be heard</div>
+        <h1>Speak up.<br><span>Stay protected.</span><br>Create change.</h1>
+        <p class="hero-lead">A student-first reporting experience that helps turn concerns into positive action — with privacy, care and clarity at every step.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" data-page="student">Explore student portal <span>→</span></button>
+          <button class="btn btn-quiet" data-scroll="how">See how it works <span>↓</span></button>
+        </div>
+        <div class="trust-row"><span>✓ No real name needed in this demo</span><span>✓ Clear status updates</span></div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a protected student voice">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="float-card card-top"><span class="mini-icon purple">✦</span><div><b>Your voice matters</b><small>Every concern deserves care</small></div></div>
+        <div class="shield"><div class="shield-inner"><span>✓</span></div></div>
+        <div class="float-card card-bottom"><span class="mini-icon mint">↗</span><div><b>Progress you can follow</b><small>Updates, one step at a time</small></div></div>
+        <div class="spark spark-a">✦</div><div class="spark spark-b">✧</div>
+      </div>
+      <div class="hero-bottom"><span>BUILT AROUND STUDENTS</span><span>PRIVACY · SUPPORT · ACCOUNTABILITY</span></div>
+    </section>
+
+    <section class="section how-section" id="how">
+      <div class="section-heading"><div class="eyebrow">SIMPLE BY DESIGN</div><h2>A clear path from concern to action.</h2><p>StudentVoice makes the process easier to understand, without promising outcomes it cannot guarantee.</p></div>
+      <div class="steps-grid">
+        <article class="step-card"><div class="step-number">01</div><div class="step-icon lavender">✎</div><h3>Share a concern</h3><p>Use a demo handle and describe the issue. Add only information needed to understand the concern.</p></article>
+        <article class="step-card"><div class="step-number">02</div><div class="step-icon blue">⌁</div><h3>See the next step</h3><p>Choose a district and category to view an example of how a report could be routed.</p></article>
+        <article class="step-card"><div class="step-number">03</div><div class="step-icon green">✓</div><h3>Follow progress</h3><p>Check the reference number and view sample status updates in your dashboard.</p></article>
+      </div>
+    </section>
+
+    <section class="privacy-band" id="privacy">
+      <div class="privacy-symbol">◇</div><div><div class="eyebrow">PRIVACY IS A PRACTICE</div><h2>Your safety comes first.</h2><p>This GitHub demo uses sample data in your browser. It is not an emergency service, does not contact authorities, and does not guarantee anonymity. Use fictional information only.</p></div>
+      <button class="btn btn-light" data-page="student">Try the demo <span>→</span></button>
+    </section>
+
+    <section class="section impact-section">
+      <div class="section-heading"><div class="eyebrow">THE BIGGER PICTURE</div><h2>Small steps. Meaningful impact.</h2><p>Inspired by the values behind safe, inclusive and accountable communities.</p></div>
+      <div class="impact-grid">
+        <div class="impact-card"><span class="sdg sdg-3">03</span><div><b>Good health & well-being</b><small>Supportive environments for every student.</small></div></div>
+        <div class="impact-card"><span class="sdg sdg-4">04</span><div><b>Quality education</b><small>Learning spaces where students feel heard.</small></div></div>
+        <div class="impact-card"><span class="sdg sdg-16">16</span><div><b>Peace, justice & strong institutions</b><small>Transparency, trust and responsibility.</small></div></div>
+      </div>
+    </section>
+  </main>
+
+  <section class="app-page page" id="student">
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand sidebar-brand" href="#" data-page="home"><span class="brand-mark">S</span><span>student<span class="brand-accent">voice</span><small>STUDENT SPACE</small></span></a>
+        <div class="side-label">WORKSPACE</div>
+        <button class="side-link selected" data-tab="overview"><span>▦</span> Overview</button>
+        <button class="side-link" data-tab="new-report"><span>＋</span> New report</button>
+        <button class="side-link" data-tab="my-reports"><span>▤</span> My reports</button>
+        <div class="sidebar-bottom"><div class="safe-note"><span>◇</span><b>Your safety matters</b><small>Use fictional details in this demo. If someone is in immediate danger, contact a trusted adult or local emergency services.</small></div><button class="side-exit" data-page="home">← Back to home</button></div>
+      </aside>
+      <div class="app-main">
+        <div class="app-top"><div><span class="breadcrumb">Student space /</span> <b id="studentPageTitle">Overview</b></div><div class="user-chip"><span class="avatar">S</span><span id="userLabel">Guest student</span></div></div>
+        <div class="app-content">
+          <div class="tab-panel active" id="tab-overview">
+            <div class="welcome-row"><div><div class="eyebrow">YOUR SPACE</div><h1>Welcome, <span id="welcomeName">student</span>.</h1><p>Here you can create a demo report and follow its progress.</p></div><button class="btn btn-primary" data-tab="new-report">＋ Create a report</button></div>
+            <div class="stats-row"><div class="stat-card"><span class="stat-icon purple">▤</span><small>Total reports</small><strong id="statTotal">0</strong></div><div class="stat-card"><span class="stat-icon orange">◷</span><small>In review</small><strong id="statReview">0</strong></div><div class="stat-card"><span class="stat-icon green">✓</span><small>Resolved</small><strong id="statResolved">0</strong></div></div>
+            <div class="panel-card"><div class="panel-head"><div><h3>Recent reports</h3><p>Your latest demo submissions</p></div><button class="text-button" data-tab="my-reports">View all →</button></div><div id="recentReports" class="report-list"></div></div>
+            <div class="notice"><span>ⓘ</span><p><b>Demo environment:</b> Reports are saved only in this browser. Do not enter real names, contact details, student IDs, or sensitive personal information.</p></div>
+          </div>
+
+          <div class="tab-panel" id="tab-new-report">
+            <div class="page-intro"><div class="eyebrow">LET YOUR VOICE BE HEARD</div><h1>Create a report</h1><p>Use a fictional scenario for this demonstration.</p></div>
+            <form id="reportForm" class="form-card">
+              <div class="form-section-title"><span>01</span><div><b>Report details</b><small>Tell us what happened in a clear, respectful way.</small></div></div>
+              <label>Report title <input id="reportTitle" maxlength="80" required placeholder="e.g. Concern about classroom facilities"></label>
+              <div class="form-row"><label>Category<select id="reportCategory" required><option value="">Choose a category</option><option>School facilities</option><option>Bullying or harassment</option><option>Student wellbeing</option><option>Safety concern</option><option>Other</option></select></label><label>Kerala district<select id="reportDistrict" required><option value="">Choose district</option></select></label></div>
+              <label>General location <span class="optional">Optional</span><input id="reportLocation" maxlength="80" placeholder="e.g. School library (no exact address)"></label>
+              <label>Description <textarea id="reportDescription" rows="5" maxlength="1200" required placeholder="Describe the fictional situation. Avoid names and identifying details."></textarea><small class="field-hint">Do not include real names, phone numbers, addresses, passwords or identifying information.</small></label>
+              <div class="form-row"><label>Urgency<select id="reportUrgency"><option>Normal</option><option>Important</option><option>Urgent</option></select></label><label>Evidence <span class="optional">Not enabled in this demo</span><input disabled value="File uploads are disabled for safety"></label></div>
+              <div class="route-preview" id="routePreview"><span class="route-dot"></span><div><b>Example routing preview</b><small>Select a district and category to see a simulated routing destination.</small></div></div>
+              <div class="form-actions"><button type="button" class="btn btn-quiet" data-tab="overview">Cancel</button><button class="btn btn-primary" type="submit">Submit demo report <span>→</span></button></div>
+            </form>
+          </div>
+
+          <div class="tab-panel" id="tab-my-reports">
+            <div class="page-intro"><div class="eyebrow">YOUR ACTIVITY</div><h1>My reports</h1><p>All reports created in this browser demo.</p></div>
+            <div class="panel-card"><div class="panel-head"><div><h3>Report history</h3><p>Track sample progress by reference number</p></div></div><div id="allReports" class="report-list"></div></div>
+          </div>
+          <div class="tab-panel" id="tab-confirmation">
+            <div class="confirmation-card"><div class="success-mark">✓</div><div class="eyebrow">DEMO REPORT CREATED</div><h1>Your voice has been recorded.</h1><p>This is a local demonstration only. No report has been sent to a real institution or authority.</p><div class="reference-box"><small>YOUR DEMO REFERENCE NUMBER</small><strong id="referenceNumber">SV-DEMO-0000</strong><button id="copyReference" class="text-button">Copy reference</button></div><button class="btn btn-primary" data-tab="my-reports">View my reports →</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="app-page page" id="agency">
+    <div class="app-shell">
+      <aside class="sidebar agency-sidebar">
+        <a class="brand sidebar-brand" href="#" data-page="home"><span class="brand-mark">S</span><span>student<span class="brand-accent">voice</span><small>AGENCY DEMO</small></span></a>
+        <div class="side-label">DEMO WORKSPACE</div>
+        <button class="side-link selected" data-agency-tab="cases"><span>▦</span> Case desk</button>
+        <button class="side-link" data-agency-tab="about"><span>ⓘ</span> Demo information</button>
+        <div class="sidebar-bottom"><div class="safe-note"><span>◇</span><b>Restricted demo view</b><small>All cases are fictional sample records. This is not connected to any government or institutional system.</small></div><button class="side-exit" data-page="home">← Back to home</button></div>
+      </aside>
+      <div class="app-main">
+        <div class="app-top"><div><span class="breadcrumb">Agency demo /</span> <b>Case desk</b></div><div class="user-chip"><span class="avatar agency-avatar">A</span>Demo reviewer</div></div>
+        <div class="app-content">
+          <div class="agency-panel active" id="agency-cases">
+            <div class="welcome-row"><div><div class="eyebrow">REVIEW WORKSPACE</div><h1>Case desk</h1><p>Review fictional submissions and explore sample case workflows.</p></div><span class="demo-label">SAMPLE DATA</span></div>
+            <div class="stats-row"><div class="stat-card"><span class="stat-icon purple">▤</span><small>Total cases</small><strong id="agencyTotal">3</strong></div><div class="stat-card"><span class="stat-icon orange">◷</span><small>Pending review</small><strong id="agencyPending">2</strong></div><div class="stat-card"><span class="stat-icon green">✓</span><small>Completed</small><strong id="agencyCompleted">1</strong></div></div>
+            <div class="agency-layout"><div class="panel-card case-panel"><div class="panel-head"><div><h3>Incoming cases</h3><p>Search and select a sample report</p></div></div><input class="search-input" id="caseSearch" placeholder="⌕  Search reference or category"><div id="caseList"></div></div><div class="panel-card case-detail" id="caseDetail"><div class="empty-detail"><span>▤</span><h3>Select a case</h3><p>Choose a report to view its details and update its demo status.</p></div></div></div>
+          </div>
+          <div class="agency-panel" id="agency-about"><div class="page-intro"><div class="eyebrow">IMPORTANT BOUNDARIES</div><h1>About this demo</h1></div><div class="panel-card"><h3>What this workspace demonstrates</h3><p>Case filtering, report review, status changes and internal reviewer notes using fictional sample information.</p><h3>What it does not do</h3><ul class="plain-list"><li>It is not an official government or school portal.</li><li>It does not forward reports to any real agency.</li><li>It does not verify identities or guarantee anonymity.</li><li>It is not monitored for emergencies.</li></ul><p>If a real person is at immediate risk, contact a trusted adult or the appropriate local emergency service rather than using this demo.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer"><a class="brand footer-brand" href="#"><span class="brand-mark">S</span><span>student<span class="brand-accent">voice</span></span></a><span>© 2026 StudentVoice · Digital Fest concept demo</span><span>Built for awareness, not emergency reporting.</span></footer>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
